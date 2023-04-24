@@ -16,7 +16,11 @@
                 </br>
                 <button type="submit">Short</button>
             </form>
-            {{ ifshortened }}
+            {% if short_url==None %}
+                <h1>Insert URL!</h1>
+            {% else %}
+                {{ ifshortened }}
+            {% endif %}
         </div>
         <div class=""></div>
     </div>
