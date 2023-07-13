@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-
+#ssss
 DATABASE_URL = os.getenv("db_url")
 #create db engine
 engine = _sql.create_engine(DATABASE_URL,pool_size=10,
