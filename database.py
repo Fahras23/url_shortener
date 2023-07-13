@@ -24,3 +24,4 @@ def get_db():
         yield db
     except:
         db.close()
+print('siema')
