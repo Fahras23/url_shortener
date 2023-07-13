@@ -3,7 +3,7 @@ import sqlalchemy.ext.declarative as _declarative
 import sqlalchemy.orm as _orm
 from dotenv import load_dotenv
 import os
-
+#fetch test
 load_dotenv()
 
 DATABASE_URL = os.getenv("db_url")
