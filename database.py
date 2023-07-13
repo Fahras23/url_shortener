@@ -27,3 +27,5 @@ def get_db():
 print('siema')
 
 print("aha")
+print('wow')
+print('elo')
