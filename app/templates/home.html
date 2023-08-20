@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/htmx.org@1.7.2/dist/htmx.min.js"></script>
+</head>
+<body>
+    <h1>Site to short you URL</h1>
+    <form method="post" action="{% url 'home' %}">
+        {% csrf_token %}
+        <label for="url">URL:</label>
+        <input type="text" id="url" name="url" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p>Your new link: {{ output_url }}</p>
+</body>
+</html>
